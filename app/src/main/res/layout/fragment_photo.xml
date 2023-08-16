@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.photo.PhotoFragment"
+    android:background="@color/lightblack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ivSelectedPhoto"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"
+            android:background="@drawable/makeup" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:background="@color/whitee"
+        >
+        <ImageButton
+
+            android:id="@+id/btnLike"
+            android:layout_width="40dp"
+            android:background="@drawable/selector_like"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/icon_download" />
+
+        <ImageButton
+            android:id="@+id/btnBookmark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/selector_bookmark"/>
+
+        <ImageButton
+            android:id="@+id/btnSetting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_setting"
+            android:layout_marginStart="60dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
